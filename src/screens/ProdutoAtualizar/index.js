@@ -86,7 +86,7 @@ function ContactUpdate({ navigation, route }) {
       <FlashMessage position="top" />
       <View style={styles.input}>
         <View>
-          <Text style={styles.texto}>Nome{nome}</Text>
+          <Text style={styles.texto}>Nome</Text>
           <Input style={styles.inputStyle}
             value={nome}
             onChangeText={value => setNome(value)}

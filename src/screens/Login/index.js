@@ -15,7 +15,7 @@ function Login({ navigation }) {
   const [senha, setSenha] = useState('');
 
   const login = async () => {
-    await api.get(`usuario/login`, {
+    await api.post(`usuario/login`, {
       email: email,
       senha: senha,
     }).then(async response => {
